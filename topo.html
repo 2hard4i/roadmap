@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Topology Learning Roadmap</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI", sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    opacity:0.8;
+}
+
+.roadmap{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    position:relative;
+}
+
+.roadmap::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    width:4px;
+    height:100%;
+    background:#38bdf8;
+    transform:translateX(-50%);
+}
+
+.step{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:60px 0;
+}
+
+.step:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.card{
+    width:40%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.circle{
+    width:30px;
+    height:30px;
+    background:#38bdf8;
+    border-radius:50%;
+    position:relative;
+    z-index:2;
+}
+
+.card h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    margin:5px 0;
+}
+
+.card a{
+    color:#7dd3fc;
+    text-decoration:none;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Topology Learning Roadmap</h1>
+<p>From Beginner to Advanced</p>
+</header>
+
+<div class="roadmap">
+
+<div class="step">
+<div class="card">
+<h2>1. Introduction to Topology</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Topology" target="_blank">What is Topology</a></li>
+<li><a href="https://www.mathsisfun.com/algebra/topology.html" target="_blank">Basic Concepts</a></li>
+<li><a href="https://ocw.mit.edu/courses/mathematics/18-905-introduction-to-topology-fall-2007/" target="_blank">MIT OpenCourseWare Intro</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>2. Set Theory & Logic Review</h2>
+<ul>
+<li><a href="https://www.khanacademy.org/math/early-math" target="_blank">Sets & Operations</a></li>
+<li><a href="https://www.khanacademy.org/math/logic" target="_blank">Logic & Proofs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">Proof Techniques</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>3. Topological Spaces</h2>
+<ul>
+<li><a href="https://mathworld.wolfram.com/TopologicalSpace.html" target="_blank">Definition of Topological Spaces</a></li>
+<li><a href="https://ncatlab.org/nlab/show/topological+space" target="_blank">Open & Closed Sets</a></li>
+<li><a href="https://www.math.stonybrook.edu/~morgan/math221_fa12/" target="_blank">Neighborhoods & Bases</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>4. Continuity & Homeomorphisms</h2>
+<ul>
+<li><a href="https://mathworld.wolfram.com/Homeomorphism.html" target="_blank">Homeomorphisms</a></li>
+<li><a href="https://www.britannica.com/science/continuity-mathematics" target="_blank">Continuous Functions</a></li>
+<li><a href="https://www.youtube.com/watch?v=3V6sP0b3E-0" target="_blank">Intro Video: Continuity</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>5. Metric Spaces</h2>
+<ul>
+<li><a href="https://mathworld.wolfram.com/MetricSpace.html" target="_blank">Definition & Examples</a></li>
+<li><a href="https://tutorial.math.lamar.edu/classes/CalcIII/MetricSpaces.aspx" target="_blank">Distance & Open Balls</a></li>
+<li><a href="https://www.mathsisfun.com/algebra/metric-spaces.html" target="_blank">Basic Properties</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>6. Connectedness & Compactness</h2>
+<ul>
+<li><a href="https://mathworld.wolfram.com/ConnectedSpace.html" target="_blank">Connected Spaces</a></li>
+<li><a href="https://mathworld.wolfram.com/CompactSpace.html" target="_blank">Compact Spaces</a></li>
+<li><a href="https://www.youtube.com/watch?v=vdBlhyb6bW8" target="_blank">Video Tutorial</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>7. Basis, Subspace & Product Topology</h2>
+<ul>
+<li><a href="https://mathworld.wolfram.com/Basis.html" target="_blank">Basis of Topology</a></li>
+<li><a href="https://mathworld.wolfram.com/SubspaceTopology.html" target="_blank">Subspace Topology</a></li>
+<li><a href="https://mathworld.wolfram.com/ProductTopology.html" target="_blank">Product Topology</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>8. Advanced Topology</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Algebraic_topology" target="_blank">Algebraic Topology</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Manifold" target="_blank">Manifolds</a></li>
+<li><a href="https://www.math.ucdavis.edu/~hunter/topology.pdf" target="_blank">Advanced Notes & Problems</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>9. Applications of Topology</h2>
+<ul>
+<li><a href="https://mathworld.wolfram.com/TopologyApplications.html" target="_blank">Topology in Physics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_topology" target="_blank">Topology in Data Science</a></li>
+<li><a href="https://www.quantamagazine.org/topology-finds-applications-in-materials-science-20201221/" target="_blank">Materials & Networks</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+</div>
+
+<footer>
+Topology Knowledge Path
+</footer>
+
+</body>
+</html>
