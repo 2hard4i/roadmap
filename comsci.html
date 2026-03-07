@@ -2,6 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+if(sessionStorage.getItem("loggedIn") !== "true"){
+window.location.href="index.html";
+}
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
