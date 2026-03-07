@@ -3,83 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access Portal</title>
+<title>Secure Portal</title>
 
 <style>
+
+/* Page background */
 body{
-    margin:0;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:Arial;
-    background:#0f172a;
-    color:white;
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Segoe UI, sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+color:white;
 }
 
-.portal{
-    background:#1e293b;
-    padding:40px;
-    border-radius:10px;
-    text-align:center;
-    box-shadow:0 0 25px rgba(0,0,0,0.5);
+/* Login Card */
+.login-box{
+width:320px;
+padding:40px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+text-align:center;
 }
 
+/* Title */
+.login-box h2{
+margin-bottom:20px;
+font-weight:500;
+}
+
+/* Input */
 input{
-    padding:10px;
-    margin-top:10px;
-    width:220px;
-    border-radius:6px;
-    border:none;
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+margin-top:10px;
+background:#0f172a;
+color:white;
+font-size:15px;
+outline:none;
 }
 
+/* Button */
 button{
-    margin-top:15px;
-    padding:10px 25px;
-    border:none;
-    border-radius:6px;
-    background:#38bdf8;
-    font-weight:bold;
-    cursor:pointer;
+margin-top:20px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
 }
 
+button:hover{
+background:#0ea5e9;
+transform:scale(1.03);
+}
+
+/* Error message */
 #error{
-    margin-top:10px;
-    color:#f87171;
+margin-top:10px;
+color:#f87171;
+font-size:14px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
-<div class="portal">
+<div class="login-box">
+
 <h2>Website Access</h2>
+
 <input type="password" id="code" placeholder="Enter Access Code">
-<br>
-<button onclick="enterSite()">Enter</button>
+
+<button onclick="login()">Enter Portal</button>
 
 <p id="error"></p>
+
 </div>
 
 <script>
 
-function enterSite(){
+const correctCode = "senjosh1113";
 
-let code = document.getElementById("code").value;
-let correctCode = "12345"; // change this
+function login(){
 
-if(code === correctCode){
+let userCode = document.getElementById("code").value;
 
-    window.location.href = "home.html"; // portal link to home page
+if(userCode === correctCode){
+
+sessionStorage.setItem("loggedIn","true");
+window.location.href="home.html";
 
 }else{
 
-    document.getElementById("error").innerText = "Incorrect access code.";
+document.getElementById("error").innerText="Incorrect access code";
 
 }
 
 }
+
+/* Allow Enter key */
+document.getElementById("code").addEventListener("keypress",function(e){
+
+if(e.key === "Enter"){
+login();
+}
+
+});
 
 </script>
 
