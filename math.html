@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+if(sessionStorage.getItem("loggedIn") !== "true"){
+window.location.href="index.html";
+}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Mathematics Learning Roadmap</title>
+
+<style>
+
+body{
+margin:0;
+font-family:"Segoe UI",sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+}
+
+header{
+text-align:center;
+padding:40px;
+}
+
+header h1{
+font-size:40px;
+}
+
+.roadmap{
+width:90%;
+max-width:900px;
+margin:auto;
+position:relative;
+}
+
+.roadmap::before{
+content:"";
+position:absolute;
+left:50%;
+width:4px;
+height:100%;
+background:#38bdf8;
+transform:translateX(-50%);
+}
+
+.step{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:60px 0;
+}
+
+.step:nth-child(even){
+flex-direction:row-reverse;
+}
+
+.card{
+width:40%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.circle{
+width:30px;
+height:30px;
+background:#38bdf8;
+border-radius:50%;
+z-index:2;
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin:6px 0;
+}
+
+.card a{
+color:#e2e8f0;
+text-decoration:none;
+}
+
+.card a:hover{
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mathematics Learning Roadmap</h1>
+<p>Click a topic to study it</p>
+</header>
+
+<div class="roadmap">
+
+<div class="step">
+<div class="card">
+<h2>1. Basic Mathematics</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Arithmetic" target="_blank">Arithmetic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Addition" target="_blank">Addition</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Subtraction" target="_blank">Subtraction</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Multiplication" target="_blank">Multiplication</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Division_(mathematics)" target="_blank">Division</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>2. Pre-Algebra</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Variable_(mathematics)" target="_blank">Variables</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Expression_(mathematics)" target="_blank">Expressions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Linear_equation" target="_blank">Basic Equations</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Inequality_(mathematics)" target="_blank">Inequalities</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>3. Algebra</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Polynomial" target="_blank">Polynomials</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Quadratic_equation" target="_blank">Quadratic Equations</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Function_(mathematics)" target="_blank">Functions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/System_of_linear_equations" target="_blank">Systems of Equations</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>4. Geometry</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Geometry" target="_blank">Basic Geometry</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Triangle" target="_blank">Triangles</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Circle" target="_blank">Circles</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Trigonometry" target="_blank">Intro to Trigonometry</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>5. Trigonometry</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sine" target="_blank">Sine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cosine" target="_blank">Cosine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tangent_(trigonometry)" target="_blank">Tangent</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Trigonometric_identity" target="_blank">Trigonometric Identities</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>6. Precalculus</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Limit_(mathematics)" target="_blank">Limits</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Exponential_function" target="_blank">Exponential Functions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Logarithm" target="_blank">Logarithms</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>7. Calculus</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Derivative" target="_blank">Derivatives</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Integral" target="_blank">Integrals</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Differential_equation" target="_blank">Differential Equations</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>8. Linear Algebra</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)" target="_blank">Matrices</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)" target="_blank">Vectors</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors" target="_blank">Eigenvalues</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>9. Probability & Statistics</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Probability" target="_blank">Probability</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Random_variable" target="_blank">Random Variables</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Statistical_inference" target="_blank">Statistical Inference</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>10. Advanced Mathematics</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Real_analysis" target="_blank">Real Analysis</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Abstract_algebra" target="_blank">Abstract Algebra</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Topology" target="_blank">Topology</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+</div>
+
+<footer>
+Mathematics Self-Study Path
+</footer>
+
+</body>
+</html>
