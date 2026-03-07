@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Portal</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+}
+
+.portal{
+    background:#1e293b;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+input{
+    padding:10px;
+    margin-top:10px;
+    width:220px;
+    border-radius:6px;
+    border:none;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 25px;
+    border:none;
+    border-radius:6px;
+    background:#38bdf8;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#error{
+    margin-top:10px;
+    color:#f87171;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="portal">
+<h2>Website Access</h2>
+<input type="password" id="code" placeholder="Enter Access Code">
+<br>
+<button onclick="enterSite()">Enter</button>
+
+<p id="error"></p>
+</div>
+
+<script>
+
+function enterSite(){
+
+let code = document.getElementById("code").value;
+let correctCode = "12345"; // change this
+
+if(code === correctCode){
+
+    window.location.href = "home.html"; // portal link to home page
+
+}else{
+
+    document.getElementById("error").innerText = "Incorrect access code.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
