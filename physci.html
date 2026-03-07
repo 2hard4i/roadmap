@@ -1,1 +1,247 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+if(sessionStorage.getItem("loggedIn") !== "true"){
+window.location.href="index.html";
+}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Physical Science Learning Roadmap</title>
+
+<style>
+
+body{
+margin:0;
+font-family:"Segoe UI",sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+}
+
+header{
+text-align:center;
+padding:40px;
+}
+
+header h1{
+font-size:40px;
+}
+
+.roadmap{
+width:90%;
+max-width:900px;
+margin:auto;
+position:relative;
+}
+
+.roadmap::before{
+content:"";
+position:absolute;
+left:50%;
+width:4px;
+height:100%;
+background:#38bdf8;
+transform:translateX(-50%);
+}
+
+.step{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:60px 0;
+}
+
+.step:nth-child(even){
+flex-direction:row-reverse;
+}
+
+.card{
+width:40%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.circle{
+width:30px;
+height:30px;
+background:#38bdf8;
+border-radius:50%;
+z-index:2;
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin:6px 0;
+}
+
+.card a{
+color:#e2e8f0;
+text-decoration:none;
+}
+
+.card a:hover{
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Physical Science Learning Roadmap</h1>
+<p>Click a topic to study it</p>
+</header>
+
+<div class="roadmap">
+
+<div class="step">
+<div class="card">
+<h2>1. Introduction to Physical Science</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Physical_science" target="_blank">What is Physical Science</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Scientific_method" target="_blank">Scientific Method</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Measurement" target="_blank">Scientific Measurement</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>2. Matter and Energy</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Matter" target="_blank">Matter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Energy" target="_blank">Energy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Law_of_conservation_of_energy" target="_blank">Conservation of Energy</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>3. Atomic Structure</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Atom" target="_blank">Atoms</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atomic_theory" target="_blank">Atomic Theory</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Subatomic_particle" target="_blank">Subatomic Particles</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>4. Chemistry Fundamentals</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Chemical_reaction" target="_blank">Chemical Reactions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Periodic_table" target="_blank">Periodic Table</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chemical_bond" target="_blank">Chemical Bonds</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>5. Classical Mechanics</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Classical_mechanics" target="_blank">Classical Mechanics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion" target="_blank">Newton's Laws</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Force" target="_blank">Force and Motion</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>6. Waves and Sound</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Wave" target="_blank">Wave Physics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sound" target="_blank">Sound</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Frequency" target="_blank">Frequency</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>7. Electricity and Magnetism</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Electricity" target="_blank">Electricity</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Magnetism" target="_blank">Magnetism</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electromagnetism" target="_blank">Electromagnetism</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>8. Thermodynamics</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Thermodynamics" target="_blank">Thermodynamics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Temperature" target="_blank">Temperature</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Heat" target="_blank">Heat Transfer</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>9. Modern Physics</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Quantum_mechanics" target="_blank">Quantum Mechanics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Relativity" target="_blank">Relativity</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Particle_physics" target="_blank">Particle Physics</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+<div class="step">
+<div class="card">
+<h2>10. Astronomy and Cosmology</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Astronomy" target="_blank">Astronomy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Universe" target="_blank">The Universe</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cosmology" target="_blank">Cosmology</a></li>
+</ul>
+</div>
+<div class="circle"></div>
+</div>
+
+</div>
+
+<footer>
+Physical Science Self-Study Path
+</footer>
+
+</body>
+</html>
+```
+
