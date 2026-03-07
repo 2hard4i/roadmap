@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Hub</title>
+
+<style>
+body {
+    margin:0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: white;
+}
+
+header {
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #38bdf8;
+}
+
+header p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.card h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer {
+    text-align:center;
+    padding:40px;
+    opacity:0.7;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Knowledge Hub</h1>
+    <p>Click any subject to explore its learning roadmap</p>
+</header>
+
+<div class="container">
+    <div class="card" onclick="location.href='psych.html'">
+        <h2>Psychology</h2>
+        <p>Learn from basics to advanced psychology concepts</p>
+    </div>
+    <div class="card" onclick="location.href='math.html'">
+        <h2>Mathematics</h2>
+        <p>Study math from fundamentals to advanced topics</p>
+    </div>
+    <div class="card" onclick="location.href='ling.html'">
+        <h2>Linguistics</h2>
+        <p>Explore language and its structure</p>
+    </div>
+    <div class="card" onclick="location.href='eco.html'">
+        <h2>Economics</h2>
+        <p>Understand economic theory and applications</p>
+    </div>
+    <div class="card" onclick="location.href='physci.html'">
+        <h2>Physical Science</h2>
+        <p>Learn about physics, chemistry, and more</p>
+    </div>
+    <div class="card" onclick="location.href='bio.html'">
+        <h2>Biology</h2>
+        <p>Explore life sciences from basics to advanced</p>
+    </div>
+    <div class="card" onclick="location.href='phi.html'">
+        <h2>Philosophy</h2>
+        <p>Delve into human thought and reasoning</p>
+    </div>
+    <div class="card" onclick="location.href='crim.html'">
+        <h2>Criminology</h2>
+        <p>Study crime, law, and society</p>
+    </div>
+    <div class="card" onclick="location.href='comsci.html'">
+        <h2>Computer Science</h2>
+        <p>Learn programming, algorithms, and tech</p>
+    </div>
+    <div class="card" onclick="location.href='soc.html'">
+        <h2>Sociology</h2>
+        <p>Explore society and human interactions</p>
+    </div>
+    <div class="card" onclick="location.href='phiheal.html'">
+        <h2>Physical Fitness & Health</h2>
+        <p>Learn about fitness, health, and wellness</p>
+    </div>
+    <div class="card" onclick="location.href='reli.html'">
+        <h2>Religion & Spirituality</h2>
+        <p>Explore beliefs, spirituality, and practices</p>
+    </div>
+    <div class="card" onclick="location.href='topo.html'">
+        <h2>Topology</h2>
+        <p>Learn about topological spaces and concepts</p>
+    </div>
+    <div class="card" onclick="location.href='his.html'">
+        <h2>History</h2>
+        <p>Study history from ancient to modern times</p>
+    </div>
+    <div class="card" onclick="location.href='milstra.html'">
+        <h2>Military Strategy</h2>
+        <p>Explore strategic planning and military concepts</p>
+    </div>
+</div>
+
+<footer>
+Knowledge Hub &copy; 2026
+</footer>
+
+</body>
+</html>
